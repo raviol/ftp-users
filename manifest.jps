@@ -5,6 +5,10 @@
   "cmd [cp]": [
     "echo ${this.param}>>/var/log/run.log"
   ],
-  "sayYes" : true
+  "restartContainers": [
+    {
+      "nodeGroup": "cp",
+    }
+  ]
   }
 }
