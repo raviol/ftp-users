@@ -1,0 +1,11 @@
+{
+  "type" : "update",
+  "name" : "Restart CP containers",
+  "onInstall" : {
+   "restartContainers": [
+    {
+      "nodeGroup": "cp",
+    }
+  ]
+  }
+}
