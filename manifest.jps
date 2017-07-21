@@ -2,10 +2,9 @@
   "type" : "update",
   "name" : "Test",
   "onInstall" : {
-   "restartNodes": [
-    {
-      "nodeGroup": "cp"
-    }
-  ]
+  "cmd [cp]": [
+    "echo $(date)>>/var/log/run.log"
+  ],
+  "sayYes" : true
   }
 }
