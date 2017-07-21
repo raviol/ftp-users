@@ -3,7 +3,7 @@
   "name" : "Test",
   "onInstall" : {
   "cmd [cp]": [
-    "echo $(date)>>/var/log/run.log"
+    "echo ${this.param}>>/var/log/run.log"
   ],
   "sayYes" : true
   }
