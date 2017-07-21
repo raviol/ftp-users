@@ -3,7 +3,7 @@
   "name" : "Test",
   "onInstall" : {
     "cmd [cp]" : {
-      "echo $(date)>>/var/log/run.log && mkdir /TEST$(date)"
+      "echo $(date)>>/var/log/run.log && mkdir /TEST; touch FILE"
     }
   }
 }
