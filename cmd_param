@@ -1,0 +1,10 @@
+{
+  "type" : "update",
+  "name" : "cmd",
+  "onInstall" : {
+  "cmd [cp]": [
+    "echo ${settings.param}>>/var/log/run.log"
+  ],
+  "sayYes" : true
+  }
+}
