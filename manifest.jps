@@ -2,10 +2,7 @@
   "type" : "update",
   "name" : "Test",
   "onInstall" : {
-  "cmd [cp]": [
-    "echo ${this.param}>>/var/log/run.log"
-  ],
-  "restartContainers": [
+   "restartContainers": [
     {
       "nodeGroup": "cp",
     }
