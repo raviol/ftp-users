@@ -2,8 +2,10 @@
   "type" : "update",
   "name" : "Test",
   "onInstall" : {
-    "cmd [cp]" : {
-      "mkdir /tmp/TEST"
+   "restartNodes": [
+    {
+      "nodeGroup": "cp"
     }
+  ]
   }
 }
