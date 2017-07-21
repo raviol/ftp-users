@@ -1,0 +1,11 @@
+{
+  "type" : "update",
+  "name" : "cmd",
+  "onInstall" : {
+  "cmd [cp]": [
+    "echo $(date)>>/var/log/run.log",
+    "mkdir /1TEST"
+  ],
+  "sayYes" : true
+  }
+}
